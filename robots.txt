@@ -1,0 +1,5 @@
+user-agent: *
+Allow: /
+Allow: /index.html
+Allow: /favicon.ico
+Allow: /robots.txt

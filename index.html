@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BuildParadise — FreeBuild Minecraft Server</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #87cefa, #ffffff);
+      color: #333;
+    }
+    header {
+      background-color: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .ip-box {
+      background: #f0f0f0;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .ip-box input {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      width: 250px;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+    }
+    .ip-box button {
+      margin-left: 10px;
+      padding: 0.6rem 1rem;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .social-buttons a {
+      display: inline-block;
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      background: #1e90ff;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BuildParadise</h1>
+  <p>The ultimate FreeBuild Minecraft server — build and relax!</p>
+</header>
+
+<section class="section ip-box">
+  <p><strong>Server IP:</strong></p>
+  <input type="text" id="ip" value="mc.buildparadise.ru" readonly>
+  <button onclick="copyIP()">Copy</button>
+  <p>Version: 1.21.4</p>
+</section>
+
+<section class="section">
+  <h2>Server Rules</h2>
+  <p>Rules are available in-game using the <code>/rules</code> command.</p>
+</section>
+
+<!--
+<section class="section">
+  <h2>Screenshot Gallery</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300x200?text=Spawn" alt="Spawn">
+    <img src="https://via.placeholder.com/300x200?text=FreeBuild" alt="FreeBuild">
+    <img src="https://via.placeholder.com/300x200?text=Town" alt="Town">
+  </div>
+</section>
+-->
+
+<section class="section">
+  <h2>About the Server</h2>
+  <p>BuildParadise is a cozy community for creative builders. There are no resets — your creations can grow and live for years!</p>
+</section>
+
+<!--
+<section class="section">
+  <h2>Contacts</h2>
+  <div class="social-buttons">
+    <a href="https://discord.gg/yourserver" target="_blank">Discord</a>
+    <a href="https://vk.com/yourpage" target="_blank">VK</a>
+  </div>
+</section>
+-->
+
+<footer>
+  &copy; 2025 BuildParadise. All rights reserved.
+</footer>
+
+<script>
+  function copyIP() {
+    const ipInput = document.getElementById("ip");
+    ipInput.select();
+    ipInput.setSelectionRange(0, 99999); // for mobile
+    document.execCommand("copy");
+    alert("IP copied: " + ipInput.value);
+  }
+</script>
+
+</body>
+</html>
